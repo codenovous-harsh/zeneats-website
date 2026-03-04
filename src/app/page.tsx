@@ -10,22 +10,25 @@ import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import CTABanner from "@/components/CTABanner";
 import Footer from "@/components/Footer";
+import AnimationProvider from "@/components/AnimationProvider";
 
 export default function Home() {
   return (
-    <main>
-      <Navbar />
-      <Hero />
-      <SubheadBanner />
-      <StatsCounter />
-      <LogoMarquee />
-      <BigCardsSection />
-      <AudienceSection />
-      <CaseStudies />
-      <Testimonials />
-      <FAQ />
-      <CTABanner />
-      <Footer />
-    </main>
+    <AnimationProvider>
+      <main>
+        <Navbar />
+        <Hero />
+        <SubheadBanner />
+        <StatsCounter />
+        <LogoMarquee />
+        <BigCardsSection />
+        <AudienceSection />
+        <CaseStudies />
+        <Testimonials />
+        <FAQ />
+        <CTABanner />
+        <Footer />
+      </main>
+    </AnimationProvider>
   );
 }
