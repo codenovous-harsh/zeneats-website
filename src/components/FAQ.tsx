@@ -5,39 +5,35 @@ import { useState } from "react";
 const faqItems = [
   {
     q: "What is ZenEats?",
-    a: "ZenEats is a rewards and engagement platform that connects banks, brands, and consumers. We help banking apps increase engagement while giving brands access to high-intent audiences.",
+    a: "ZenEats is a digital cafeteria management platform for corporates. We help companies digitize food ordering, enable cashless payments, and provide real-time analytics to optimize cafeteria operations.",
   },
   {
-    q: "How does ZenEats integrate with banking apps?",
-    a: "We provide a lightweight SDK that integrates into your existing mobile app within days. Our modular architecture means you can enable specific features without overhauling your app.",
+    q: "How does ZenEats integrate with existing cafeteria systems?",
+    a: "ZenEats provides a lightweight setup that works alongside your existing POS and kitchen systems. Our team handles the integration within 2-3 weeks with minimal disruption to operations.",
   },
   {
-    q: "What kind of rewards can be offered?",
-    a: "ZenEats supports cashback, vouchers, loyalty points, instant discounts, gamified rewards, and co-branded offers. The reward type can be customized per campaign.",
+    q: "What features does the employee app offer?",
+    a: "Employees can browse menus, pre-order meals, make cashless payments, track orders in real-time, set dietary preferences, and rate their food — all from their phone.",
   },
   {
-    q: "How do brands reach banking audiences?",
-    a: "Brands can create targeted campaigns that appear as native experiences within banking apps — think sponsored rewards, offer walls, and contextual promotions.",
+    q: "How does ZenEats help reduce food waste?",
+    a: "Our demand forecasting engine analyzes historical ordering data and trends to predict daily demand accurately. This helps kitchens prepare the right quantities, reducing waste by up to 30%.",
   },
   {
-    q: "What is the typical ROI for banks?",
-    a: "Banks typically see a 3-4x increase in daily active users, 6x growth in digital transactions, and significant improvement in NPS scores within the first 90 days.",
+    q: "What analytics and reporting are available?",
+    a: "The Nexus Dashboard provides real-time insights on revenue, order volumes, vendor performance, food ratings, waste metrics, and employee satisfaction — all in one place.",
   },
   {
-    q: "Is ZenEats compliant with banking regulations?",
-    a: "Yes. We are fully compliant with RBI guidelines, data protection regulations, and banking industry standards. We undergo regular security audits and certifications.",
+    q: "Can ZenEats support multiple cafeteria locations?",
+    a: "Yes. ZenEats is built for multi-location management. You can manage hundreds of cafeterias across different cities from a single admin dashboard with location-specific configurations.",
   },
   {
-    q: "How long does integration take?",
-    a: "A typical integration takes 1-2 weeks from SDK integration to go-live. We provide dedicated engineering support throughout the process.",
+    q: "How do cashless payments work?",
+    a: "Employees can pay via wallet top-ups, meal cards, UPI, or corporate meal benefits. All transactions are tracked and reconciled automatically, eliminating cash handling.",
   },
   {
-    q: "What analytics and reporting is available?",
-    a: "Our dashboard provides real-time analytics on user engagement, redemption rates, campaign performance, ROI metrics, and detailed demographic insights.",
-  },
-  {
-    q: "Can we customize the user experience?",
-    a: "Absolutely. The entire rewards experience can be white-labeled to match your app's design language, brand colors, and user flows.",
+    q: "What onboarding support does ZenEats provide?",
+    a: "We provide dedicated onboarding support including vendor training, employee app tutorials, admin dashboard walkthroughs, and a dedicated success manager for the first 90 days.",
   },
 ];
 
@@ -48,21 +44,20 @@ export default function FAQ() {
     <section className="py-16 px-6" data-animate>
       <div className="max-w-[1120px] mx-auto flex flex-col lg:flex-row gap-12">
         {/* Left Column */}
-        <div className="lg:w-[360px] shrink-0">
+        <div className="lg:w-[320px] shrink-0">
           <span className="text-accent text-base font-medium uppercase tracking-wide">
             FAQ
           </span>
-          <h2 className="text-[28px] md:text-[40px] font-medium text-text-heading mt-3 mb-4">
-            Get all your questions answered here
+          <h2 className="text-[28px] md:text-[36px] font-semibold text-text-heading mt-3 mb-4 leading-tight">
+            Get your questions answered
           </h2>
           <p className="text-base text-text-primary">
-            Everything you need to know about ZenEats and how it works for banks,
-            brands, and publishers.
+            Everything you need to know about ZenEats and how it works for corporates, vendors, and facility managers.
           </p>
         </div>
 
         {/* Right Column - Accordion */}
-        <div className="flex-1 space-y-2">
+        <div className="flex-1 min-w-0 space-y-2">
           {faqItems.map((item, i) => (
             <div
               key={i}

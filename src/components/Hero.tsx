@@ -2,6 +2,8 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import PhoneFrame from "./ui/PhoneFrame";
+import CafeteriaHome from "./phone-screens/CafeteriaHome";
 
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -39,6 +41,9 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex flex-col items-center justify-center pt-20 pb-16 px-6 overflow-hidden"
     >
+      {/* Top warm glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[400px] rounded-full bg-accent/10 blur-[150px] pointer-events-none" />
+
       {/* Subtle radial gradient glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] rounded-full bg-accent/5 blur-[120px] pointer-events-none" />
 
@@ -56,21 +61,21 @@ export default function Hero() {
           ))}
         </div>
         <span className="text-sm text-text-primary">
-          200+ brands & banks trust ZenEats
+          500+ corporates trust ZenEats
         </span>
       </div>
 
       {/* Heading */}
-      <h1 className="hero-heading text-[32px] sm:text-[40px] md:text-[56px] font-medium leading-[1.1] sm:leading-[1] text-text-heading text-center max-w-[800px] mb-6 opacity-0">
-        Powering engagement where{" "}
-        <em className="text-accent not-italic italic">money</em> moves.
+      <h1 className="hero-heading text-[32px] sm:text-[40px] md:text-[56px] font-semibold leading-[1.1] sm:leading-[1] text-text-heading text-center max-w-[800px] mb-6 opacity-0">
+        Redefining cafeterias for{" "}
+        <em className="text-accent italic">modern</em> workplaces.
       </h1>
 
       {/* Subtitle */}
       <p className="hero-subtitle text-base text-text-primary text-center max-w-[700px] mb-12 opacity-0">
-        ZenEats connects banks, brands, and consumers through a unified rewards
-        and engagement platform — driving loyalty, retention, and growth at
-        scale.
+        ZenEats transforms corporate cafeterias with digital ordering, cashless
+        payments, and real-time analytics — improving employee experience while
+        streamlining operations.
       </p>
 
       {/* Phone Mockup Area */}
@@ -79,14 +84,11 @@ export default function Hero() {
         <div className="absolute -left-8 sm:-left-16 top-8 w-32 sm:w-48 h-24 sm:h-32 rounded-2xl bg-accent/10 blur-xl rotate-[-8deg]" />
         <div className="absolute -right-8 sm:-right-16 top-12 w-32 sm:w-48 h-24 sm:h-32 rounded-2xl bg-accent/8 blur-xl rotate-[8deg]" />
 
-        {/* Phone frame placeholder */}
-        <div className="relative mx-auto w-[200px] h-[400px] sm:w-[240px] sm:h-[480px] rounded-[32px] border-4 border-white/10 bg-gradient-to-b from-white/5 to-white/[0.02] flex items-center justify-center">
-          <div className="text-center">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-accent/20 flex items-center justify-center">
-              <span className="text-accent text-2xl font-bold">Z</span>
-            </div>
-            <p className="text-text-primary/60 text-sm">App Preview</p>
-          </div>
+        {/* Phone frame with CafeteriaHome screen */}
+        <div className="relative mx-auto flex items-center justify-center">
+          <PhoneFrame>
+            <CafeteriaHome />
+          </PhoneFrame>
         </div>
       </div>
     </section>

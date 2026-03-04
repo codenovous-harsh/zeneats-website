@@ -6,34 +6,34 @@ import "swiper/css";
 
 const caseStudies = [
   {
-    title: "How HDFC Bank boosted app engagement by 3x",
+    title: "Infosys digitized 45 cafeterias across campuses",
     description:
-      "A gamified rewards experience increased daily active users and transaction frequency across mobile banking.",
-    color: "#004B87",
+      "Digital ordering reduced wait times by 60% and increased employee satisfaction scores across all locations.",
+    color: "#007CC3",
   },
   {
-    title: "Flipkart's co-branded reward campaign",
+    title: "TCS achieved zero food waste certification",
     description:
-      "Targeted offers through banking apps drove a 40% increase in first-time purchases for Flipkart.",
-    color: "#2874F0",
+      "Demand forecasting and smart portioning helped TCS eliminate food waste across their major tech parks.",
+    color: "#0070AD",
   },
   {
-    title: "Driving UPI adoption for Axis Bank",
+    title: "Wipro's cashless cafeteria transformation",
     description:
-      "Reward-linked UPI transactions grew 6x in 90 days through ZenEats' engagement layer.",
-    color: "#800054",
+      "100% cashless adoption within 3 months, reducing operational overhead and improving transaction speed by 4x.",
+    color: "#44167E",
   },
   {
-    title: "Swiggy x SBI co-marketing success",
+    title: "Reliance digitized 120+ office cafeterias",
     description:
-      "Food delivery vouchers in SBI's app generated 500K+ redemptions in the first month.",
-    color: "#FC8019",
+      "Unified cafeteria management across 120+ locations with real-time analytics and vendor performance tracking.",
+    color: "#003DA5",
   },
   {
-    title: "Myntra's festive season banking push",
+    title: "Goldman Sachs elevated campus dining experience",
     description:
-      "Fashion deals surfaced in banking apps led to 2x higher conversion vs standard display ads.",
-    color: "#FF3F6C",
+      "Premium food ordering with dietary preference tracking and allergen alerts for global workforce.",
+    color: "#7399C6",
   },
 ];
 
@@ -45,8 +45,7 @@ export default function CaseStudies() {
           Proven <em className="text-accent not-italic italic">impact</em>
         </h2>
         <p className="text-base text-text-muted-dark text-center mb-10 max-w-[500px] mx-auto">
-          See how leading banks and brands achieved measurable results with
-          ZenEats.
+          See how leading corporates transformed their cafeteria operations with ZenEats.
         </p>
       </div>
 

@@ -1,46 +1,33 @@
 "use client";
 
-const bankLogos = [
-  { name: "HDFC", color: "#004B87" },
-  { name: "SBI", color: "#22409A" },
-  { name: "ICICI", color: "#F58220" },
-  { name: "Axis", color: "#800054" },
-  { name: "Kotak", color: "#ED1C24" },
-  { name: "Yes", color: "#0070C0" },
-  { name: "BOB", color: "#F15A22" },
-  { name: "PNB", color: "#003893" },
-  { name: "RBL", color: "#0077B5" },
-  { name: "IDBI", color: "#00A650" },
-  { name: "Union", color: "#00529B" },
-  { name: "Canara", color: "#FFD700" },
+const corporateLogos = [
+  { name: "Infosys", color: "#007CC3" },
+  { name: "TCS", color: "#0070AD" },
+  { name: "Wipro", color: "#44167E" },
+  { name: "Reliance", color: "#003DA5" },
+  { name: "Accenture", color: "#A100FF" },
+  { name: "Goldman", color: "#7399C6" },
+  { name: "Deloitte", color: "#86BC25" },
+  { name: "Cognizant", color: "#1A4CA1" },
+  { name: "HCL", color: "#0070C0" },
+  { name: "Microsoft", color: "#00A4EF" },
+  { name: "Google", color: "#4285F4" },
+  { name: "Amazon", color: "#FF9900" },
 ];
 
-const brandLogos = [
-  { name: "Flipkart", color: "#2874F0" },
-  { name: "Amazon", color: "#FF9900" },
-  { name: "Myntra", color: "#FF3F6C" },
-  { name: "Swiggy", color: "#FC8019" },
-  { name: "Zomato", color: "#E23744" },
-  { name: "BigBasket", color: "#84C225" },
-  { name: "Uber", color: "#000000" },
-  { name: "Ola", color: "#2DA94F" },
-  { name: "MakeMyTrip", color: "#EE2E24" },
-  { name: "BookMyShow", color: "#C4242B" },
-  { name: "Nykaa", color: "#FC2779" },
-  { name: "PhonePe", color: "#5F259F" },
-  { name: "Paytm", color: "#00BAF2" },
-  { name: "CRED", color: "#1A1A2E" },
-  { name: "Dunzo", color: "#00D26A" },
-  { name: "Lenskart", color: "#333333" },
-  { name: "Cult.fit", color: "#E53935" },
-  { name: "HealthifyMe", color: "#FF6F00" },
-  { name: "Ajio", color: "#3F2B96" },
-  { name: "Tata CLiQ", color: "#5C2D91" },
-  { name: "JioMart", color: "#0070BA" },
-  { name: "Pepperfry", color: "#D95900" },
-  { name: "Urban Co.", color: "#4A90D9" },
-  { name: "GoIbibo", color: "#EE5535" },
-  { name: "Cleartrip", color: "#E74C3C" },
+const vendorLogos = [
+  { name: "Fresh Menu", color: "#E85D2C" },
+  { name: "Chai Point", color: "#C6893F" },
+  { name: "Box8", color: "#FF6B35" },
+  { name: "iD Fresh", color: "#00A651" },
+  { name: "Eat.fit", color: "#6B4C9A" },
+  { name: "Rebel Foods", color: "#E31E24" },
+  { name: "Cafe Coffee", color: "#006B3F" },
+  { name: "Sodexo", color: "#ED1C24" },
+  { name: "Elior", color: "#003DA5" },
+  { name: "Compass", color: "#00529B" },
+  { name: "Dabba", color: "#FF8C00" },
+  { name: "Zomato Pro", color: "#E23744" },
 ];
 
 function LogoItem({ name, color }: { name: string; color: string }) {
@@ -58,7 +45,7 @@ function MarqueeRow({
   logos,
   direction,
 }: {
-  logos: typeof bankLogos;
+  logos: typeof corporateLogos;
   direction: "left" | "right";
 }) {
   const doubled = [...logos, ...logos];
@@ -82,11 +69,10 @@ export default function LogoMarquee() {
   return (
     <section className="py-16 px-6" data-animate>
       <div className="max-w-[1120px] mx-auto space-y-6">
-        <MarqueeRow logos={bankLogos} direction="left" />
-        <MarqueeRow logos={brandLogos} direction="right" />
+        <MarqueeRow logos={corporateLogos} direction="left" />
+        <MarqueeRow logos={vendorLogos} direction="right" />
         <p className="text-center text-base text-text-muted mt-8">
-          We power engagement for BFSI, consumer brands, and publishers reaching
-          100M+ users.
+          Trusted by 243+ corporates and 500+ food vendors across India.
         </p>
       </div>
     </section>

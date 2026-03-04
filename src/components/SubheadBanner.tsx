@@ -33,9 +33,8 @@ export default function SubheadBanner() {
   return (
     <section ref={sectionRef} className="py-16 md:py-24 px-6">
       <div className="max-w-[1120px] mx-auto">
-        <p className="subhead-text text-xl md:text-2xl lg:text-[28px] font-medium text-text-heading text-center leading-relaxed opacity-0">
-          ZenEats empowers banks and brands to engage, retain, and grow their
-          customers through instant rewards.
+        <p className="subhead-text text-xl md:text-2xl lg:text-[28px] font-semibold text-text-heading text-center leading-relaxed opacity-0">
+          ZenEats empowers corporates to digitize cafeteria operations, delight employees with seamless food experiences, and optimize costs with real-time data.
         </p>
       </div>
     </section>

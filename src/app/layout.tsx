@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ZenEats - Powering Engagement Where Money Moves",
+  title: "ZenEats - Digital Cafeteria Management for Modern Workplaces",
   description:
-    "ZenEats empowers banks and brands to engage, retain, and grow their customers through instant rewards.",
+    "ZenEats transforms corporate cafeterias with digital ordering, cashless payments, and real-time analytics for happier employees and smarter operations.",
 };
 
 export default function RootLayout({

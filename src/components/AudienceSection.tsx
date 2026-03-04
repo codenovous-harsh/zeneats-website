@@ -5,11 +5,11 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const demographics = [
-  { age: "18-24 yr", pct: 17 },
-  { age: "25-34 yr", pct: 24 },
-  { age: "35-44 yr", pct: 26 },
-  { age: "45-54 yr", pct: 18 },
-  { age: "55+", pct: 15 },
+  { age: "IT/Tech", pct: 32 },
+  { age: "BFSI", pct: 22 },
+  { age: "Manufacturing", pct: 18 },
+  { age: "Pharma", pct: 15 },
+  { age: "Others", pct: 13 },
 ];
 
 export default function AudienceSection() {
@@ -42,15 +42,13 @@ export default function AudienceSection() {
     <section ref={sectionRef} className="py-16 px-6" data-animate>
       <div className="max-w-[1120px] mx-auto">
         <h2 className="text-[28px] md:text-[40px] font-medium text-text-heading text-center mb-4">
-          Unlock access to{" "}
+          Serving India&apos;s top{" "}
           <em className="text-accent not-italic italic">
-            India&apos;s most engaged
-          </em>{" "}
-          banking audience
+            corporates
+          </em>
         </h2>
         <p className="text-base text-text-primary text-center mb-12 max-w-[600px] mx-auto">
-          Reach the most active digital banking users across age groups and
-          geographies.
+          Reaching the modern workforce across industries and office locations nationwide.
         </p>
 
         <div className="audience-content flex flex-col lg:flex-row gap-12 items-center">
@@ -79,9 +77,9 @@ export default function AudienceSection() {
           <div className="flex-1 space-y-8">
             <div>
               <p className="text-[36px] md:text-[48px] font-semibold text-text-heading leading-tight">
-                30 Million
+                1.44 Million
               </p>
-              <p className="text-base text-text-primary">Daily Active Users</p>
+              <p className="text-base text-text-primary">Daily orders processed</p>
             </div>
 
             {/* Demographics bars */}
@@ -106,10 +104,10 @@ export default function AudienceSection() {
 
             <div>
               <p className="text-[36px] md:text-[48px] font-semibold text-text-heading leading-tight">
-                110 Million
+                243
               </p>
               <p className="text-base text-text-primary">
-                Monthly Active Users
+                Corporate clients
               </p>
             </div>
           </div>

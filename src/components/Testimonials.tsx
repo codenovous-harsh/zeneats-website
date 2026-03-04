@@ -10,59 +10,51 @@ import "swiper/css/navigation";
 const testimonials = [
   {
     name: "Rajesh Kumar",
-    role: "VP of Digital Banking, HDFC Bank",
+    role: "Facility Director, Infosys",
     quote:
-      "ZenEats transformed how our users engage with the app. We saw a 3x increase in daily sessions within the first quarter of integration.",
-    company: "HDFC",
-    color: "#004B87",
+      "ZenEats transformed our cafeteria operations across 45 locations. Employee satisfaction with food services jumped 40% in the first quarter.",
+    company: "Infosys",
+    color: "#007CC3",
   },
   {
     name: "Priya Sharma",
-    role: "Head of Partnerships, Flipkart",
+    role: "VP Operations, TCS",
     quote:
-      "The banking audience ZenEats gave us access to was incredibly high-intent. Our conversion rates were 2x higher than any other channel.",
-    company: "Flipkart",
-    color: "#2874F0",
+      "The demand forecasting alone saved us crores in food waste. ZenEats pays for itself within the first month of deployment.",
+    company: "TCS",
+    color: "#0070AD",
   },
   {
     name: "Amit Patel",
-    role: "Chief Product Officer, Axis Bank",
+    role: "Head of Facilities, Wipro",
     quote:
-      "Integrating ZenEats' reward layer took less than 2 weeks. The impact on our UPI adoption metrics was immediate and sustained.",
-    company: "Axis",
-    color: "#800054",
+      "Going cashless was seamless. Our employees love the app, and we have complete visibility into every transaction and vendor performance metric.",
+    company: "Wipro",
+    color: "#44167E",
   },
   {
-    name: "Sneha Reddy",
-    role: "Marketing Director, Swiggy",
+    name: "Sarah Mitchell",
+    role: "Workplace Experience Lead, Goldman Sachs",
     quote:
-      "ZenEats helped us reach banking app users at exactly the right moment — when they're thinking about spending. It's a game-changer.",
-    company: "Swiggy",
-    color: "#FC8019",
+      "ZenEats' dietary tracking and allergen management features give our diverse global workforce confidence in every meal they order.",
+    company: "Goldman",
+    color: "#7399C6",
   },
   {
     name: "Vikram Singh",
-    role: "GM Digital Channels, SBI",
+    role: "Admin Head, Reliance Industries",
     quote:
-      "Our customers love the rewards experience. NPS scores for our mobile app improved by 18 points after launching with ZenEats.",
-    company: "SBI",
-    color: "#22409A",
+      "Managing 120+ cafeterias from one dashboard seemed impossible. ZenEats made it not just possible, but effortless.",
+    company: "Reliance",
+    color: "#003DA5",
   },
   {
     name: "Ananya Desai",
-    role: "Brand Strategy Lead, Myntra",
+    role: "Facility Manager, Accenture",
     quote:
-      "We achieved 500K impressions in the first week alone. The quality of engagement through banking apps is unmatched.",
-    company: "Myntra",
-    color: "#FF3F6C",
-  },
-  {
-    name: "Karthik Nair",
-    role: "CTO, Kotak Mahindra Bank",
-    quote:
-      "ZenEats' SDK was the easiest third-party integration we've ever done. Clean API, great docs, and stellar support.",
-    company: "Kotak",
-    color: "#ED1C24",
+      "The real-time analytics helped us optimize vendor contracts and reduce per-meal costs by 18% while improving food quality.",
+    company: "Accenture",
+    color: "#A100FF",
   },
 ];
 
@@ -72,11 +64,11 @@ export default function Testimonials() {
   return (
     <section className="py-16 px-6">
       <div className="max-w-[1120px] mx-auto">
-        <h2 className="text-[28px] md:text-[40px] font-medium text-text-heading text-center mb-3">
+        <h2 className="text-[28px] md:text-[40px] font-semibold text-text-heading text-center mb-3">
           Voices of <em className="text-accent not-italic italic">impact</em>
         </h2>
         <p className="text-base text-text-primary text-center mb-10 max-w-[500px] mx-auto">
-          Hear from the leaders who trust ZenEats to power engagement.
+          Hear from facility leaders who transformed their cafeteria operations.
         </p>
 
         <Swiper

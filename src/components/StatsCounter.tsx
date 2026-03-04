@@ -8,24 +8,24 @@ const stats = [
   {
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <circle cx="10" cy="10" r="9" stroke="#FF8766" strokeWidth="2" />
-        <path d="M7 10l2 2 4-4" stroke="#FF8766" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <rect x="2" y="3" width="16" height="14" rx="2" stroke="#FF8766" strokeWidth="2" />
+        <path d="M6 7h8M6 11h5" stroke="#FF8766" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
-    label: "Rewards distributed",
-    value: 100,
-    suffix: " Cr+",
+    label: "Cafeterias managed",
+    value: 891,
+    suffix: "+",
   },
   {
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <rect x="2" y="4" width="16" height="12" rx="2" stroke="#FF8766" strokeWidth="2" />
-        <path d="M2 8h16" stroke="#FF8766" strokeWidth="2" />
+        <path d="M4 4h12v14H4z" stroke="#FF8766" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M7 8h6M7 11h4" stroke="#FF8766" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
-    label: "Digital payments",
-    value: 6,
-    suffix: "x",
+    label: "Monthly orders",
+    value: 13,
+    suffix: "M+",
   },
   {
     icon: (
@@ -34,22 +34,21 @@ const stats = [
         <path d="M4 17c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#FF8766" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
-    label: "User engagement",
-    value: 4,
-    suffix: "x",
+    label: "Active users",
+    value: 1440,
+    suffix: "K+",
   },
   {
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <circle cx="10" cy="10" r="9" stroke="#FF8766" strokeWidth="2" />
-        <path d="M7 12s1.5 2 3 2 3-2 3-2" stroke="#FF8766" strokeWidth="2" strokeLinecap="round" />
-        <circle cx="7.5" cy="8" r="1" fill="#FF8766" />
-        <circle cx="12.5" cy="8" r="1" fill="#FF8766" />
+        <path d="M10 2v4" stroke="#FF8766" strokeWidth="2" strokeLinecap="round" />
+        <circle cx="10" cy="9" r="2" fill="#FF8766" />
+        <path d="M10 11v1c0 3-5 5-5 5h10s-5-2-5-5v-1" stroke="#FF8766" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
-    label: "User retention",
-    value: 3,
-    suffix: "x",
+    label: "Cities covered",
+    value: 38,
+    suffix: "+",
   },
 ];
 

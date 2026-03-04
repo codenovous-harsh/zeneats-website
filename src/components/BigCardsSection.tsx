@@ -4,50 +4,72 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BigCard from "./BigCard";
+import PhoneFrame from "./ui/PhoneFrame";
+import MenuBrowser from "./phone-screens/MenuBrowser";
+import OrderTracking from "./phone-screens/OrderTracking";
+import AdminDashboard from "./phone-screens/AdminDashboard";
 
 const cards = [
   {
-    id: "for-banks",
-    eyebrow: "FOR BANKS",
+    id: "for-corporates",
+    eyebrow: "FOR CORPORATES",
     heading: (
       <>
-        Transform banking apps into{" "}
-        <em className="text-accent not-italic italic">engagement</em> powerhouses
+        Smart cafeterias for{" "}
+        <em className="text-accent not-italic italic">happier</em> employees
       </>
     ),
     description:
-      "Integrate reward-based experiences into your banking app. Drive digital adoption, increase transactions, and keep users coming back with personalized offers and gamified journeys.",
-    ctaText: "Explore for Banks",
-    chips: ["Spark", "Circle", "OnePass", "Inspire"],
-    phoneColor: "#E2C8B6",
+      "Digital ordering, cashless payments, real-time menus, and meal benefit management — everything your employees need for a seamless cafeteria experience.",
+    ctaText: "Explore for Corporates",
+    chips: ["Digital Ordering", "Cashless Payments", "Real-time Menus", "Meal Benefits"],
+    phoneContent: (
+      <PhoneFrame>
+        <MenuBrowser />
+      </PhoneFrame>
+    ),
+    reversed: false,
   },
   {
-    id: "for-brands",
-    eyebrow: "FOR BRANDS",
+    id: "for-vendors",
+    eyebrow: "FOR VENDORS",
     heading: (
       <>
-        Reach <em className="text-accent not-italic italic">millions</em> of
-        high-intent consumers
+        Streamline{" "}
+        <em className="text-accent not-italic italic">kitchen</em> operations
       </>
     ),
     description:
-      "Access India's most active banking audience. Place your brand where purchase decisions happen — inside banking and payment apps used daily by millions.",
-    ctaText: "Explore for Brands",
-    phoneColor: "#C8D6E2",
+      "Real-time order management, FIFO queuing, demand forecasting, and waste reduction tools that help kitchen teams serve faster and smarter.",
+    ctaText: "Explore for Vendors",
+    chips: ["Live Orders", "FIFO Queue", "Demand Forecasting", "Waste Reduction"],
+    phoneContent: (
+      <PhoneFrame>
+        <OrderTracking />
+      </PhoneFrame>
+    ),
+    reversed: true,
   },
   {
-    id: "monetize",
-    eyebrow: "MONETIZE",
+    id: "for-facilities",
+    eyebrow: "FOR FACILITIES",
     heading: (
       <>
-        Turn user attention into{" "}
-        <em className="text-accent not-italic italic">revenue</em>
+        Complete{" "}
+        <em className="text-accent not-italic italic">visibility</em> and
+        control
       </>
     ),
     description:
-      "Monetize your app's engagement without disrupting user experience. Our native ad formats and sponsored rewards generate revenue while users enjoy the experience.",
-    ctaText: "Start Monetizing",
-    phoneColor: "#D6E2C8",
+      "Monitor sales, vendor performance, compliance, and sustainability metrics from a single dashboard. Make data-driven decisions for your cafeteria operations.",
+    ctaText: "Explore for Facilities",
+    chips: ["Analytics Dashboard", "Vendor Management", "Compliance", "Sustainability"],
+    phoneContent: (
+      <PhoneFrame>
+        <AdminDashboard />
+      </PhoneFrame>
+    ),
+    reversed: false,
   },
 ];
 
@@ -57,22 +79,47 @@ export default function BigCardsSection() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
-      gsap.utils.toArray<HTMLElement>(".big-card-item").forEach((card) => {
-        gsap.fromTo(
-          card,
-          { y: 40, opacity: 0 },
-          {
-            y: 0,
-            opacity: 1,
-            duration: 0.8,
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: card,
-              start: "top 80%",
-              toggleActions: "play none none none",
-            },
-          }
-        );
+      gsap.utils.toArray<HTMLElement>(".big-card-item").forEach((card, i) => {
+        const isReversed = cards[i]?.reversed;
+        const content = card.querySelector(".big-card-content");
+        const phone = card.querySelector(".big-card-phone");
+
+        if (content) {
+          gsap.fromTo(
+            content,
+            { x: isReversed ? 40 : -40, opacity: 0 },
+            {
+              x: 0,
+              opacity: 1,
+              duration: 0.8,
+              ease: "power2.out",
+              scrollTrigger: {
+                trigger: card,
+                start: "top 80%",
+                toggleActions: "play none none none",
+              },
+            }
+          );
+        }
+
+        if (phone) {
+          gsap.fromTo(
+            phone,
+            { x: isReversed ? -40 : 40, opacity: 0 },
+            {
+              x: 0,
+              opacity: 1,
+              duration: 0.8,
+              delay: 0.15,
+              ease: "power2.out",
+              scrollTrigger: {
+                trigger: card,
+                start: "top 80%",
+                toggleActions: "play none none none",
+              },
+            }
+          );
+        }
       });
     }, sectionRef);
 
@@ -90,7 +137,8 @@ export default function BigCardsSection() {
               description={card.description}
               ctaText={card.ctaText}
               chips={card.chips}
-              phoneColor={card.phoneColor}
+              phoneContent={card.phoneContent}
+              reversed={card.reversed}
             />
           </div>
         ))}

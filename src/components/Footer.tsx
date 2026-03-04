@@ -1,21 +1,42 @@
 "use client";
 
-const footerColumns = [
+interface FooterLink {
+  label: string;
+  href: string;
+}
+
+interface FooterColumn {
+  title: string;
+  links: FooterLink[];
+}
+
+const footerColumns: FooterColumn[] = [
   {
     title: "SOLUTIONS",
-    links: ["For Banks", "For Brands", "Monetize"],
+    links: [
+      { label: "For Corporates", href: "/#for-corporates" },
+      { label: "For Vendors", href: "/#for-vendors" },
+      { label: "For Facilities", href: "/#for-facilities" },
+    ],
   },
   {
     title: "RESOURCES",
-    links: ["Case Studies"],
+    links: [{ label: "Case Studies", href: "#" }],
   },
   {
     title: "COMPANY",
-    links: ["About Us", "Contact Us"],
+    links: [
+      { label: "About Us", href: "/about" },
+      { label: "Contact Us", href: "#" },
+    ],
   },
   {
     title: "LEGAL",
-    links: ["Refund Policy", "Privacy Policy", "Terms of Service"],
+    links: [
+      { label: "Refund Policy", href: "#" },
+      { label: "Privacy Policy", href: "#" },
+      { label: "Terms of Service", href: "#" },
+    ],
   },
 ];
 
@@ -36,7 +57,7 @@ export default function Footer() {
           {/* Logo + Address */}
           <div className="col-span-2 md:col-span-1">
             <a
-              href="#home"
+              href="/"
               className="text-accent font-semibold text-xl tracking-tight"
             >
               ZenEats
@@ -66,12 +87,12 @@ export default function Footer() {
               </h4>
               <ul className="space-y-2">
                 {col.links.map((link) => (
-                  <li key={link}>
+                  <li key={link.label}>
                     <a
-                      href="#"
+                      href={link.href}
                       className="text-sm text-text-primary/60 hover:text-accent transition-colors"
                     >
-                      {link}
+                      {link.label}
                     </a>
                   </li>
                 ))}
