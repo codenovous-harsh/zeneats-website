@@ -61,7 +61,7 @@ export default function Hero() {
       </div>
 
       {/* Heading */}
-      <h1 className="hero-heading text-[40px] md:text-[56px] font-medium leading-[1] text-text-heading text-center max-w-[800px] mb-6 opacity-0">
+      <h1 className="hero-heading text-[32px] sm:text-[40px] md:text-[56px] font-medium leading-[1.1] sm:leading-[1] text-text-heading text-center max-w-[800px] mb-6 opacity-0">
         Powering engagement where{" "}
         <em className="text-accent not-italic italic">money</em> moves.
       </h1>
@@ -76,11 +76,11 @@ export default function Hero() {
       {/* Phone Mockup Area */}
       <div className="hero-phone relative w-full max-w-[400px] mx-auto opacity-0">
         {/* Blurred card decorations */}
-        <div className="absolute -left-16 top-8 w-48 h-32 rounded-2xl bg-accent/10 blur-xl rotate-[-8deg]" />
-        <div className="absolute -right-16 top-12 w-48 h-32 rounded-2xl bg-accent/8 blur-xl rotate-[8deg]" />
+        <div className="absolute -left-8 sm:-left-16 top-8 w-32 sm:w-48 h-24 sm:h-32 rounded-2xl bg-accent/10 blur-xl rotate-[-8deg]" />
+        <div className="absolute -right-8 sm:-right-16 top-12 w-32 sm:w-48 h-24 sm:h-32 rounded-2xl bg-accent/8 blur-xl rotate-[8deg]" />
 
         {/* Phone frame placeholder */}
-        <div className="relative mx-auto w-[240px] h-[480px] rounded-[32px] border-4 border-white/10 bg-gradient-to-b from-white/5 to-white/[0.02] flex items-center justify-center">
+        <div className="relative mx-auto w-[200px] h-[400px] sm:w-[240px] sm:h-[480px] rounded-[32px] border-4 border-white/10 bg-gradient-to-b from-white/5 to-white/[0.02] flex items-center justify-center">
           <div className="text-center">
             <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-accent/20 flex items-center justify-center">
               <span className="text-accent text-2xl font-bold">Z</span>

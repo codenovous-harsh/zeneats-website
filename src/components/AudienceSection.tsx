@@ -56,7 +56,7 @@ export default function AudienceSection() {
         <div className="audience-content flex flex-col lg:flex-row gap-12 items-center">
           {/* Map Placeholder */}
           <div className="flex-1 flex items-center justify-center">
-            <div className="w-full max-w-[400px] h-[320px] rounded-2xl bg-card-glass flex items-center justify-center relative overflow-hidden">
+            <div className="w-full max-w-[320px] sm:max-w-[400px] h-[260px] sm:h-[320px] rounded-2xl bg-card-glass flex items-center justify-center relative overflow-hidden">
               {/* Simple India outline placeholder */}
               <svg
                 viewBox="0 0 200 260"
@@ -87,8 +87,8 @@ export default function AudienceSection() {
             {/* Demographics bars */}
             <div className="space-y-3">
               {demographics.map((demo) => (
-                <div key={demo.age} className="flex items-center gap-4">
-                  <span className="text-sm text-text-primary w-16 shrink-0">
+                <div key={demo.age} className="flex items-center gap-3 sm:gap-4">
+                  <span className="text-xs sm:text-sm text-text-primary w-14 sm:w-16 shrink-0">
                     {demo.age}
                   </span>
                   <div className="flex-1 h-3 rounded-full bg-white/5 overflow-hidden">

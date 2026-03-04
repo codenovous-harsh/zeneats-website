@@ -18,13 +18,13 @@ export default function BigCard({
   phoneColor = "#E2C8B6",
 }: BigCardProps) {
   return (
-    <div className="bg-surface-light rounded-2xl p-8 pb-16 flex flex-col lg:flex-row gap-8">
+    <div className="bg-surface-light rounded-2xl p-6 pb-10 sm:p-8 sm:pb-16 flex flex-col lg:flex-row gap-8">
       {/* Content */}
       <div className="flex-1 flex flex-col justify-center">
         <span className="text-accent text-base font-medium uppercase tracking-wide mb-3">
           {eyebrow}
         </span>
-        <h3 className="text-2xl font-medium text-text-dark leading-[26.4px] mb-4">
+        <h3 className="text-xl sm:text-2xl font-medium text-text-dark leading-[1.2] sm:leading-[26.4px] mb-4">
           {heading}
         </h3>
         <p className="text-base text-text-muted-dark mb-6">{description}</p>

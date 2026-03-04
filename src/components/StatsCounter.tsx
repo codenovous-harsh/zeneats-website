@@ -91,17 +91,17 @@ export default function StatsCounter() {
         {stats.map((stat, i) => (
           <div
             key={stat.label}
-            className="glass-card rounded-2xl px-6 pt-4 pb-6"
+            className="glass-card rounded-2xl px-4 sm:px-6 pt-4 pb-5 sm:pb-6"
           >
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-2 mb-3 sm:mb-4">
               {stat.icon}
-              <span className="text-base font-medium text-text-primary">
+              <span className="text-sm sm:text-base font-medium text-text-primary">
                 {stat.label}
               </span>
             </div>
             <span
               ref={(el) => { counterRefs.current[i] = el; }}
-              className="text-[48px] font-semibold leading-[60px] text-text-heading"
+              className="text-[32px] sm:text-[48px] font-semibold leading-[40px] sm:leading-[60px] text-text-heading"
             >
               0{stat.suffix}
             </span>

@@ -46,7 +46,7 @@ const brandLogos = [
 function LogoItem({ name, color }: { name: string; color: string }) {
   return (
     <div
-      className="flex-shrink-0 w-20 h-20 rounded-xl flex items-center justify-center text-white text-xs font-semibold"
+      className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg sm:rounded-xl flex items-center justify-center text-white text-[10px] sm:text-xs font-semibold"
       style={{ backgroundColor: color }}
     >
       {name}
