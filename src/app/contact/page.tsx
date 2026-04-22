@@ -425,11 +425,24 @@ export default function ContactPage() {
                     Visit Us
                   </h3>
                 </div>
-                <p className="text-sm text-text-primary/80 leading-relaxed">
-                  16E2 Lodha Crest World
-                  <br />
-                  Lower Parel, Mumbai 400013
-                </p>
+                <div className="space-y-3">
+                  <div>
+                    <p className="text-xs text-text-muted mb-0.5">Registered Address</p>
+                    <p className="text-sm text-text-primary/80 leading-relaxed">
+                      1602 Lodha
+                      <br />
+                      Lower Parel, Mumbai 400013
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-xs text-text-muted mb-0.5">Mailing Address</p>
+                    <p className="text-sm text-text-primary/80 leading-relaxed">
+                      B-302, Shankardhan Plaza, 3rd Floor
+                      <br />
+                      JN Road, Mulund West, Mumbai 400080
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

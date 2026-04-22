@@ -69,11 +69,24 @@ export default function Footer() {
             >
               info@zeneats.co.in
             </a>
-            <p className="text-sm text-text-primary/60 mt-2 leading-relaxed">
-              16E2 Lodha Crest World
-              <br />
-              Lower Parel, Mumbai 400013
-            </p>
+            <div className="mt-2 space-y-2">
+              <div>
+                <p className="text-xs text-text-primary/40">Registered Address</p>
+                <p className="text-sm text-text-primary/60 leading-relaxed">
+                  1602 Lodha
+                  <br />
+                  Lower Parel, Mumbai 400013
+                </p>
+              </div>
+              <div>
+                <p className="text-xs text-text-primary/40">Mailing Address</p>
+                <p className="text-sm text-text-primary/60 leading-relaxed">
+                  B-302, Shankardhan Plaza, 3rd Floor
+                  <br />
+                  JN Road, Mulund West, Mumbai 400080
+                </p>
+              </div>
+            </div>
             {/* LinkedIn icon */}
             <a
               href="#"
