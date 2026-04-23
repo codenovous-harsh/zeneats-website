@@ -91,7 +91,7 @@ export default function ContactPage() {
       <Navbar />
       <main>
         {/* Hero */}
-        <section className="relative min-h-[50vh] flex flex-col items-center justify-center pt-40 sm:pt-44 md:pt-48 lg:pt-52 pb-12 px-6 overflow-hidden">
+        <section className="relative min-h-[50vh] flex flex-col items-center justify-center pt-24 sm:pt-28 md:pt-32 pb-12 px-6 overflow-hidden">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[400px] rounded-full bg-accent/10 blur-[150px] pointer-events-none" />
 
           <h1 className="contact-hero-heading text-[32px] sm:text-[40px] md:text-[56px] font-semibold leading-[1.1] text-text-heading text-center max-w-[800px] mb-6 opacity-0">

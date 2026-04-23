@@ -25,15 +25,15 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${scrolled ? "bg-bg-primary/90 backdrop-blur-sm" : "bg-transparent"}`}>
-      <div className="max-w-[1120px] mx-auto px-4 flex items-center justify-between py-0">
+      <div className="max-w-[1120px] mx-auto px-4 flex items-center justify-between h-16 sm:h-20">
         {/* Logo */}
-        <a href="/" className="flex items-center">
+        <a href="/" className="flex items-center -my-12 sm:-my-14 md:-my-16 lg:-my-20">
           <Image
             src="/images/logos/zeneats-logo.png"
             alt="ZenEats"
             width={500}
             height={150}
-            className="h-32 sm:h-36 md:h-40 lg:h-44 w-auto object-contain"
+            className="h-40 sm:h-48 md:h-52 lg:h-56 w-auto object-contain"
           />
         </a>
 

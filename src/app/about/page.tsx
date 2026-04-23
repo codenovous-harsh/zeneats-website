@@ -142,7 +142,7 @@ export default function AboutPage() {
       <Navbar />
       <main>
         {/* ═══ Hero ═══ */}
-        <section className="relative min-h-[70vh] flex flex-col items-center justify-center pt-40 sm:pt-44 md:pt-48 lg:pt-52 pb-16 px-6 overflow-hidden">
+        <section className="relative min-h-[70vh] flex flex-col items-center justify-center pt-24 sm:pt-28 md:pt-32 pb-16 px-6 overflow-hidden">
           {/* Decorative glows */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[400px] rounded-full bg-accent/10 blur-[150px] pointer-events-none" />
           <div className="absolute top-20 right-[10%] w-3 h-3 rounded-full bg-accent/40 animate-pulse pointer-events-none" />
