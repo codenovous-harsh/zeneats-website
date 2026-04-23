@@ -63,7 +63,7 @@ export default function Hero({ delayStart = 0 }: HeroProps) {
     <section
       ref={sectionRef}
       id="home"
-      className="relative min-h-screen flex flex-col items-center justify-center pt-32 sm:pt-36 md:pt-40 lg:pt-44 pb-16 px-6 overflow-hidden"
+      className="relative min-h-screen flex flex-col items-center justify-center pt-52 sm:pt-60 md:pt-72 lg:pt-80 pb-16 px-6 overflow-hidden"
     >
       {/* Top warm glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[400px] rounded-full bg-accent/10 blur-[150px] pointer-events-none" />
